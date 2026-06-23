@@ -2,5 +2,5 @@ device: "cpu"
 attack_round: 10
 attacking_client: "2"
 flip_type: "0->1"
-server_log: "server_metrics_c2_0.txt"
+server_log: "../metrics/server_metrics_c2_0.txt"
 sheet_start_cell: "A7"

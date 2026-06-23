@@ -325,7 +325,7 @@ class FedAvgAttackDetection(fl.server.strategy.FedAvg):
 
 
 def get_client_fn(csv_dir, input_size):
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     SCALER_DIR = os.path.join(BASE_DIR, "shared")
     scaler = StandardScaler()
     scaler.mean_ = np.load(os.path.join(SCALER_DIR, "scaler_mean.npy"))
@@ -457,7 +457,7 @@ def export_logs_to_sheets(log_file_path, spreadsheet_title, client_start_cell, a
 
 # main function
 if __name__ == "__main__":
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     DATA_DIR = os.path.join(BASE_DIR, "data", "custom_splits", "output_final")
     sample_df = pd.read_csv(os.path.join(DATA_DIR, "partition0.csv"))
     INPUT_SIZE = sample_df.shape[1] - 1 

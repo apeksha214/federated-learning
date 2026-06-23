@@ -20,9 +20,9 @@ EOF
     python simulation_attack.py
 }
 
-run_experiment 10 "0" "1->0" "server_metrics_c0_1.txt" "A2"
-run_experiment 10 "0" "0->1" "server_metrics_c0_0.txt" "A3"
-run_experiment 10 "1" "1->0" "server_metrics_c1_1.txt" "A4"
-run_experiment 10 "1" "0->1" "server_metrics_c1_0.txt" "A5"
-run_experiment 10 "2" "1->0" "server_metrics_c2_1.txt" "A6"
-run_experiment 10 "2" "0->1" "server_metrics_c2_0.txt" "A7"
+run_experiment 10 "0" "1->0" "../metrics/server_metrics_c0_1.txt" "A2"
+run_experiment 10 "0" "0->1" "../metrics/server_metrics_c0_0.txt" "A3"
+run_experiment 10 "1" "1->0" "../metrics/server_metrics_c1_1.txt" "A4"
+run_experiment 10 "1" "0->1" "../metrics/server_metrics_c1_0.txt" "A5"
+run_experiment 10 "2" "1->0" "../metrics/server_metrics_c2_1.txt" "A6"
+run_experiment 10 "2" "0->1" "../metrics/server_metrics_c2_0.txt" "A7"
